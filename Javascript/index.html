@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <script src="js/combat.js"></script> 
+  
+    <ul class="tabs">
+        <li class="tab tab-content1 tab-active">Formulaire</li>
+        <li class="tab tab-content2">Mode Sombre</li>
+        <li class="tab tab-content3">Combat</li>
+    </ul>
+    
+
+    <div class="content content1 active"><h2>Formulaire</h2> 
+  
+      <form action="" class="form" id="registrationForm">
+        <div class="form-group">
+          <input type="text" placeholder="Pseudo" class="form_input" id="pseudo" />
+          <label for="pseudo" class="form__label">Pseudo</label>
+          <span class="error-message" id="pseudoError"></span>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email" class="form_input" id="email" />
+          <label for="email" class="form__label">Email</label>
+          <span class="error-message" id="emailError"></span>
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Mdp" class="form_input" id="password" />
+          <label for="password" class="form__label">Mdp</label>
+          <span class="error-message" id="passwordError"></span>
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Vérification Mdp" class="form_input" id="confirmPassword" />
+          <label for="confirmPassword" class="form__label">Vérification Mdp</label>
+          <span class="error-message" id="confirmPasswordError"></span>
+        </div>
+        <div class="form-group">
+          <label>Choisissez une option:</label>
+          <input type="radio" name="option" value="option1" /> Femme
+          <input type="radio" name="option" value="option2" /> Homme
+          <span class="error-message" id="optionError"></span>
+        </div>
+        <div id="message"></div>
+        <button type="submit" class="form__button">Submit</button>
+      </form>
+         
+      <script src="js/form.js"></script>
+
+
+</div>
+    <div class="content content2">  <h1>Mode Sombre / Clair</h1>
+      <button class="toggle-button" onclick="toggleDarkMode()">Activer le Mode Sombre</button>
+      <script src="js/app.js"></script></div>
+
+
+ 
+    <div class="content content3">Nous allons simuler un combat dans un tournoi/colisée :
+      Créer une classe puis initialiser deux instances de cette classe.
+      Chaque personnage possède un nom, des points de vie, une attaque, une
+      précision et deux fonctions : une pour Attaquer et une pour la Précision
+      Dans une boucle, réalisez les attaques des deux combattants en testant bien s’ils
+      touchent leur adversaire et en diminuant ses points de vie si c’est le cas.
+      Utiliser le console.log() pour envoyer des messages dans la console à chaque
+      étape, suivre le combat et connaitre le vainqueur à la fin.
+      Vérifier la précision :
+      Générer un nombre aléatoire avec math.random() (qui retourne un décimal
+      entre 0 et 1), si ce nombre est inférieur à la précision du combattant alors le
+      celui ci peut attaquer.</div>
+    <script src="js/tabs.js"></script>
+    
+
+
+  </body>
+</html>
